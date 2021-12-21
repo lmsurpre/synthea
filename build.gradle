@@ -115,6 +115,9 @@ test {
     // showStandardStreams = true
   }
   maxHeapSize = "6144m"
+  jacoco {
+    excludes = ["org.hl7.*", "com.google.*"]
+  }
 }
 
 buildscript {
